@@ -31,7 +31,9 @@ public class Graphlist_13023{
             g[from].add(to); //ex.g[0]에 2추가하기
             g[to].add(from); //ex. g[2]에 0추가하기
         }
+
         m *= 2;
+
         for  (int i=0; i<m; i++) {
             for (int j=0; j<m; j++) {
                 int A = edges.get(i).from;

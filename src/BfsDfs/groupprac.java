@@ -55,15 +55,19 @@ public class groupprac {
                 }
             }
         }
-        int[] ans = new int[cnt];
+
+        int[] ans = new int[cnt]; //group갯수
+
         for (int i=0; i<n; i++) {
             for (int j=0; j<n; j++) {
                 if (group[i][j] != 0) {
-                    ans[group[i][j]-1]+=1;
+                    ans[group[i][j]-1]+=1;//각그룹마다 몇개의 원소
                 }
             }
         }
+
         Arrays.sort(ans);
+
         System.out.println(cnt);
         for (int i=0; i<cnt; i++) {
             System.out.println(ans[i]);

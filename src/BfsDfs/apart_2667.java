@@ -39,6 +39,7 @@ public class apart_2667 {
 
         int[][] group = new int[num][num]; //집이 어느 그룹에 속할지
         int cnt = 0;
+
         for (int i = 0; i < num; i++) {
             for (int j = 0; j < num; j++) {
                 if (a[i][j] == 1 && group[i][j] == 0) { //1이고 아무 그룹에도 속하지 않은 경우
@@ -47,6 +48,7 @@ public class apart_2667 {
                 }
             }
         }
+
         int[] house = new int[cnt]; //단지 내 집의 수를 저장할 배열
         for(int i=0; i<num; i++){
             for (int j=0;j<num;j++){
@@ -74,6 +76,7 @@ public class apart_2667 {
             }
         }
     }
+
     public static void bfs(int[][] a,int[][] group, int x, int y, int cnt, int n){
         Queue<Set> q = new LinkedList<Set>();
         q.add(new Set(x,y));
